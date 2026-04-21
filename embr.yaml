@@ -1,0 +1,11 @@
+platform: nodejs
+autoDeploy: true
+
+run:
+  port: 3000
+  startCommand: "npm start"
+
+healthCheck:
+  enabled: true
+  path: "/api/health"
+  expectedStatusCode: 200
